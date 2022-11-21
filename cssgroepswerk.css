@@ -1,0 +1,24 @@
+.header {
+  background-image: url(Images/logo2.jpg);
+  height: 200px;
+}
+.name {
+  text-align: center;
+  color: white;
+}
+
+.content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.submitbtn {
+  margin-top: 80px;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 0;
+  height: 80px;
+  background-color: gray;
+}
