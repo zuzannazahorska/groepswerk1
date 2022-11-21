@@ -16,8 +16,17 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">Gif</div>
-        <div class="col">Weather content</div>
+        <div class="col">
+          <canvas id="icon1" width="128" height="128"></canvas>
+          <canvas id="icon2" width="128" height="128"></canvas>
+        </div>
+        <div class="col">
+          <div class="weather" id="weather">
+            <p>Location:</p>
+            <p>Tempereture: °C</p>
+            <p>Current conditions</p>
+          </div>
+        </div>
         <div class="col">
           <button class="btn btn-lg">Again</button>
         </div>
@@ -41,5 +50,6 @@
             Mariandrea
           </div>
     </div>
+    <script src="weather.js"></script>
   </body>
 </html>
