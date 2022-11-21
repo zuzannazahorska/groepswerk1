@@ -22,15 +22,17 @@
       />
       <label for="floatingInput"> Name </label>
     </div>
-    <div class="form-floating">
-      <select
-        class="form-select"
-        id="floatingSelect"
-        aria-label="Floating label select example"
-      >
-        <input type="date" />
-      </select>
-      <label for="floatingSelect"> Birthday date </label>
+    <div>
+      <label for="meeting-time">Choose your date of birth </label>
+
+      <input
+        type="datetime-local"
+        id="meeting-time"
+        name="meeting-time"
+        value="2018-06-12T19:30"
+        min="2018-06-07T00:00"
+        max="2018-06-14T00:00"
+      />
     </div>
     <div class="form-floating">
       <select
