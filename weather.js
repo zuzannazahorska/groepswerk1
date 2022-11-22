@@ -15,7 +15,7 @@ fetch(url)
     console.log(data);
     if (data.currentConditions.conditions == "Overcast") {
       document.getElementById("myImg").src = "Images/overcast.gif";
-    } else if (data.currentConditions.conditions == "Partially cloudly") {
+    } else if (data.currentConditions.conditions == "Partially cloudy") {
       document.getElementById("myImg").src = "Images/overcast.gif";
     } else if (data.currentConditions.conditions == "Rain") {
       document.getElementById("myImg").src = "Images/rain.gif";
