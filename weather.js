@@ -14,6 +14,10 @@ fetch(url)
     console.log(data);
     if (data.currentConditions.conditions == "Overcast") {
       document.getElementById("myImg").src = "Images/overcast.gif";
+    } else if (data.currentConditions.conditions == "Partially cloudly") {
+      document.getElementById("myImg").src = "Images/overcast.gif";
+    } else if (data.currentConditions.conditions == "Rain") {
+      document.getElementById("myImg").src = "Images/rain.gif";
     }
     weather.innerHTML = `
   <p>Location: ${data.resolvedAddress}</p>
@@ -24,4 +28,3 @@ fetch(url)
     alert("Wrong city name");
     console.log(err);
   });
-let;
