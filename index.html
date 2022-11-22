@@ -20,16 +20,16 @@
     <div class="container content">
       <div class="row">
         <div class="col">
-          <input type="text" id="inputname" placeholder="Name" />
+          <input type="text" id="inputname" placeholder="Name" required >
         </div>
         <div class="col"> 
-          <input type="date" id="inputdate" placeholder="Birthdate" />
+          <input type="number" id="inputdate" placeholder="Birthdate" required>
         </div>
         <div class="col">
-          <input type="text" id="inputcity" placeholder="Choose your city" />
+          <input type="text" id="inputcity" placeholder="Choose your city" required>
         </div>
       <div class="row">
-        <div class="submitbtn"><button class="btn btn-lg"> Go </button> </div>
+        <div><button id="submitbtn" class="btn btn-lg" > Go </button> </div>
         </div>
       </div>
       <div>
@@ -42,5 +42,6 @@
       </div>
 
     </div>
+    <script src="storage.js"></script>
   </body>
 </html>
