@@ -24,4 +24,3 @@ fetch(url)
     alert("Wrong city name");
     console.log(err);
   });
-let;

@@ -1,15 +1,16 @@
 body{
   font-family: 'ZCOOL XiaoWei', sans-serif;
+  background-color: #D0AEA2
 }
 .header {
   background-image: url(Images/logo2.jpg);
   background-size: cover;
-  height: 20rem;
+  height: 25rem;
 }
 .name {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
-  color: #dfbc5e;
+  color: #D0AEA2;
   font-size: 7rem;
   letter-spacing: 2px;
   position: relative;
@@ -29,10 +30,73 @@ body{
 .footer {
   margin-top: 100px;
   margin-bottom: 0;
-  height: 80px;
-  background-color: gray;
+  padding: 50px;;
+  background-color: #AA251C;
+  color: white;
+  
 }
 
 .inputlabel{
   font-size: 2.5rem;
+  padding: 10px;
+  color: #AA251C;
+}
+
+#submitbtn{
+  margin-top: 80px;
+  /* background-color: #7F0000; */
+  background-color: #AA251C;;
+  padding: 15px 100px;
+  border-radius: 20px;
+  border: none;
+}
+
+#submitbtn:hover{
+  background-color: #891d16;
+}
+
+.again:hover{
+  background-color:#891d16 ;
+  color: white;
+}
+.contact{
+  display: flex;
+ 
+}
+.icon{
+  font-size: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#inputdate, #inputname, #inputcity{
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  
+}
+
+
+/* result.html */
+.weather-container{
+  padding: 50px;
+}
+.again{
+  margin-top: 80px;
+  background-color: #AA251C;
+  padding: 15px 100px;
+  border-radius: 20px;
+  color: white;
+  position: center;
+  right: 30px;
+}
+
+#myImg{
+  border-radius: 70px;
+}
+.welcome{
+  text-align: center;
+  padding: 40px;
+  font-size: 50px;
+font-weight: 700;
 }

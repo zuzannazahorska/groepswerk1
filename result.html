@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fonts -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap"
     rel="stylesheet">
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="cssgroepswerk.css" />
-    <title>Result</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-          <div class="col-8">
-            <h1>Weather today</h1>
-            <div class="weather" id="weather"></div>
-            <img id="myImg" src="Images/4lQ5.gif" width="250" height="200">
-              
-            </div>
-          <div class="col-4">
-            <button class="btn btn-lg">Again</button>
-          </div>
+
+    <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="cssgroepswerk.css" />
+  <title>Result</title>
+</head>
+
+<body>
+  <div class="container-fluid weather-container">
+    <div class="row">
+      <div class="col-3">
+        <h1>Weather today</h1>
+        <div class="weather" id="weather"></div>
       </div>
+      <div class="col-3 myImg">
+        <img id="myImg" src="Images/4lQ5.gif" width="250" height="200">
+      </div>
+
+      <div class="col-6">
+        <a href="index.html"><button class="btn btn-lg again"> Again</button></a>
       </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <h1> Welcome <span id="name"></span>, you are  <span id="age">  </span> years old</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="welcome"> Welcome <span id="name"></span>, you are <span id="age"> </span> years old</h1>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-4"> Image</div>
-            <div class="col-8"> Quote</div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4"> Image</div>
+      <div class="col-8"> Quote</div>
     </div>
-    <div class="container footer">
-        <div class="row"> 
-            Zuzzana 
-            Olena
-            Mariandrea
-          </div>
+  </div>
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col">
+        <h3>Developers:</h3>
+        <p>Mariandrea Villalobos</p>
+        <p>Olena Dubovets</p>
+        <p>Zuzanna Zahorska</p>
+      </div>
+      <div class="col">
+        <h3>Contact:</h3>
+        <div class="contact">
+          <p><i class="fa-brands fa-github icon"></i></p>
+          <p><i class="fa-solid fa-envelope icon"></i></p>
+          <p><i class="fa-brands fa-linkedin icon"></i></p>
+        </div>
+
+      </div>
     </div>
-    <script src="storage2.js"></script>
-    <script src="weather.js"></script>
-  </body>
+
+  </div>
+  <script src="storage2.js"></script>
+  <script src="weather.js"></script>
+</body>
+
 </html>
