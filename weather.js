@@ -8,6 +8,7 @@ let url =
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
   mySession.inputcity +
   "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
