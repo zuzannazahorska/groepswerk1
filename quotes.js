@@ -1,3 +1,5 @@
+let session = JSON.parse(sessionStorage.getItem(""));
+
 let chineseZodiac = {
   rat1: [1948, 1960, 1972, 1984, 1996, 2008, 2020, 2032],
   ox1: [1949, 1961, 1973, 1985, 1997, 2009, 2021, 2033],
@@ -23,7 +25,7 @@ const getZodiac = (inputdate) => {
   return zodiac;
 };
 
-console.log(getZodiac(inputdate));
+console.log(getZodiac(session.inputdate));
 
 let images = {
   rat1: [(src = "images//rat.jpg.png")],
@@ -50,4 +52,7 @@ const getImages = (inputdate) => {
   return images;
 };
 
-console.log(getImages(inputdate));
+console.log(getImages(session.inputdate));
+
+let allquotes = document.getElementById("quotes");
+s;
