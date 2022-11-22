@@ -78,7 +78,7 @@ const getZodiac = (inputdate) => {
   let zodiac = "";
   for (let key in chineseZodiac) {
     if (chineseZodiac[key].includes(parseInt(inputdate))) {
-      zodiac = key;
+      zodiac = chinese.Zodiac[key];
     }
   }
   return zodiac;
