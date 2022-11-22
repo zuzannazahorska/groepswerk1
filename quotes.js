@@ -1,4 +1,5 @@
 let currentSession = JSON.parse(sessionStorage.getItem("dataObject"));
+
 let inputdate = currentSession.inputdate;
 console.log(inputdate);
 
@@ -57,7 +58,7 @@ let chineseZodiac = {
   rooster1: {
     years: [1957, 1969, 1981, 1993, 2005, 2017, 2029, 2041],
     quote:
-      "Rooster's auspicious gifts are forward thinking and solid self-confidence.",
+      "Rooster's auspicious gifts are forward thinking and solid self-confidence",
   },
   dog1: {
     years: [1958, 1970, 1982, 1994, 2006, 2018, 2030, 2042],
@@ -88,3 +89,4 @@ const currentZodiac = getZodiac(inputdate);
 document.getElementById("age").innerHTML = age;
 document.getElementById("images").src = "../template/save.png";
 document.getElementById("quotes").innerHTML = currentZodiac.quote;
+document.getElementById("zodiacimg").src=currentZodiac.imgSrc;
