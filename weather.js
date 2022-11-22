@@ -1,7 +1,7 @@
 // fetch van jsonplaceholder API;
 // Update
 let mySession = JSON.parse(sessionStorage.getItem("dataObject"));
-console.log(mySession);
+console.log("test" + mySession);
 
 let weather = document.getElementById("weather");
 let url =
@@ -12,6 +12,9 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
+    if (data.currentConditions.conditions == "Overcast") {
+      document.getElementById("myImg").src = "Images/overcast.gif";
+    }
     weather.innerHTML = `
   <p>Location: ${data.resolvedAddress}</p>
   <p>Temperature: ${data.currentConditions.temp}°C</p>
@@ -21,3 +24,4 @@ fetch(url)
     alert("Wrong city name");
     console.log(err);
   });
+let;
