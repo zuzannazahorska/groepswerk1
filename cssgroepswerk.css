@@ -1,10 +1,20 @@
+body{
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+}
 .header {
   background-image: url(Images/logo2.jpg);
-  height: 200px;
+  background-size: cover;
+  height: 20rem;
 }
 .name {
+  font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
-  color: white;
+  color: #dfbc5e;
+  font-size: 7rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 25%;
+  font-weight: 900;
 }
 
 .content {
@@ -22,3 +32,4 @@
   height: 80px;
   background-color: gray;
 }
+

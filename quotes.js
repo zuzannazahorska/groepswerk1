@@ -13,13 +13,41 @@ let chineseZodiac = {
   pig1: [1959, 1971, 1983, 1995, 2007, 2019, 2031, 2043],
 };
 
-const getZodiac = (inputYear) => {
+const getZodiac = (inputdate) => {
   let zodiac = "";
   for (let key in getZodiac) {
-    if (chineseZodiac[key].inlcludes(parseInt(inputYear))) {
+    if (chineseZodiac[key].inlcludes(parseInt(inputdate))) {
       zodiac = key;
     }
   }
   return zodiac;
 };
-console.log(getZodiac(inputYear));
+
+console.log(getZodiac(inputdate));
+
+let images = {
+  rat1: [(src = "images//rat.jpg.png")],
+  ox1: [(src = "images//ox-removebg-preview.png")],
+  tiger1: [(src = "images//tiger-removebg-preview.png")],
+  rabbit1: [(src = "images//rabbit-removebg-preview.png")],
+  dragon1: [(src = "images//dragon-removebg-preview.png")],
+  snake1: [(src = "images//snake-removebg-preview.png")],
+  horse1: [(src = "images//horse-removebg-preview.png")],
+  goat1: [(src = "images//goat-removebg-preview.png")],
+  monkey1: [(src = "images//monkey-removebg-preview.png")],
+  rooster1: [(src = "images//rooster-removebg-preview.png")],
+  dog1: [(src = "images//dog-removebg-preview.png")],
+  pig1: [(src = "images//pig-removebg-preview.png")],
+};
+
+const getImages = (inputdate) => {
+  let images = "";
+  for (let key in getImages) {
+    if (images[key].inlcludes(parseInt(inputdate))) {
+      images = key;
+    }
+  }
+  return images;
+};
+
+console.log(getImages(inputdate));
