@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap"
-    rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="cssgroepswerk.css" />
-  <title>Result</title>
-</head>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cssgroepswerk.css" />
+    <title>Result</title>
+  </head>
 
-<body>
-  <div class="container-fluid weather-container">
-    <div class="row">
-      <div class="col-3">
-        <h1>Weather today</h1>
-        <div class="weather" id="weather"></div>
-      </div>
-      <div class="col-3 myImg">
-        <img id="myImg" src="Images/4lQ5.gif" width="250" height="200">
-      </div>
-
-      <div class="col-6">
-        <a href="index.html"><button class="btn btn-lg again"> Again</button></a>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <h1 class="welcome"> Welcome <span id="name"></span>, you are <span id="age"> </span> years old</h1>
-    </div>
-<<<<<<< HEAD
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-4"> <img id="zodiac-img" src="images/dragon-removebg-preview.png" alt=""></div>
-      <div class="col-8"> Quote</div>
-    </div>
-  </div>
-  <div class="container-fluid footer">
-    <div class="row">
-      <div class="col">
-        <h3>Developers:</h3>
-        <p>Mariandrea Villalobos</p>
-        <p>Olena Dubovets</p>
-        <p>Zuzanna Zahorska</p>
-      </div>
-      <div class="col">
-        <h3>Contact:</h3>
-        <div class="contact">
-          <p><i class="fa-brands fa-github icon"></i></p>
-          <p><i class="fa-solid fa-envelope icon"></i></p>
-          <p><i class="fa-brands fa-linkedin icon"></i></p>
+  <body>
+    <div class="container-fluid weather-container">
+      <div class="row">
+        <div class="col-3">
+          <h1>Weather today</h1>
+          <div class="weather" id="weather"></div>
+        </div>
+        <div class="col-3 myImg">
+          <img id="myImg" src="Images/4lQ5.gif" width="250" height="200" />
         </div>
 
+        <div class="col-6">
+          <a href="index.html"
+            ><button class="btn btn-lg again">Again</button></a
+          >
+        </div>
       </div>
     </div>
-
-  </div>
-  <script src="storage2.js"></script>
-  <script src="weather.js"></script>
-</body>
-
-</html>
-=======
-    <div class="container">
-        <div class="row">
-            <div class="col-4"> <img id="zodiacimg" src="images/horse-removebg-preview.png" alt=""></div>
-            <div class="col-8"> quote</div>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="welcome">
+          Welcome <span id="name"></span>, you are <span id="age"> </span> years
+          old
+        </h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4" id="images"></div>
+        <div class="col-8" id="quotes"></div>
+      </div>
     </div>
     <div hidden id="quotes">
       <label for="test"> Snake facts</label>
@@ -136,10 +117,43 @@
         Horse gifts the world with true freedom of mind body and spirit
       </p>
     </div>
-    
+
+    <div hidden id="images">
+      <img src="images//snake-removebg-preview.png" class="snakeimg" />
+      <img src="images//tiger-removebg-preview.png" class="tigerimg" />
+      <img src="images//rooster-removebg-preview.png" class="roosterimg" />
+      <img src="images//dragon-removebg-preview.png" class="dragonimg" />
+      <img src="images//rabbit-removebg-preview.png" class="rabbitimg" />
+      <img src="images//dog-removebg-preview.png" class="dogimg" />
+      <img src="images//goat-removebg-preview.png" class="goatimg" />
+      <img src="images//monkey-removebg-preview.png" class="monkeyimg" />
+      <img src="images//rat.jpg.png" class="ratimg" />
+      <img src="images//ox-removebg-preview.png" class="oximg" />
+      <img src="images//pig-removebg-preview.png" class="pigimg" />
+      <img src="images//horse-removebg-preview.png" class="horseimg" />
+      <script src="quotes.js"></script>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col">
+          <h3>Developers:</h3>
+          <p>Mariandrea Villalobos</p>
+          <p>Olena Dubovets</p>
+          <p>Zuzanna Zahorska</p>
+        </div>
+        <div class="col">
+          <h3>Contact:</h3>
+          <div class="contact">
+            <p><i class="fa-brands fa-github icon"></i></p>
+            <p><i class="fa-solid fa-envelope icon"></i></p>
+            <p><i class="fa-brands fa-linkedin icon"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="storage2.js"></script>
     <script src="weather.js"></script>
     <script src="quotes.js"></script>
   </body>
 </html>
->>>>>>> 2bafb42 (changes)

@@ -84,3 +84,8 @@ const getZodiac = (inputdate) => {
   return zodiac;
 };
 console.log(getZodiac(inputdate));
+
+const currentZodiac = getZodiac(inputdate);
+document.getElementById("age").innerHTML = age;
+document.getElementById("images").src = "../template/save.png";
+document.getElementById("quotes").innerHTML = currentZodiac.quote;
