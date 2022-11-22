@@ -18,19 +18,22 @@
 </head>
 
 <body>
-  <div class="container header">
+  <div class="container-fluid header">
     <h1 class="name">Personalized Chinese Zodiac</h1>
   </div>
   <div class="container content">
     <div class="row">
       <div class="col">
-        <input type="text" id="inputname" placeholder="Name" required>
+        <label class="inputlabel" for="text">Your name:</label><br>
+        <input type="text" id="inputname"  required/>
       </div>
       <div class="col">
-        <input type="number" id="inputdate" placeholder="Birthdate" required>
+        <label class="inputlabel" for="number">Your birthyear:</label><br>
+        <input type="number" id="inputdate" required/>
       </div>
       <div class="col">
-        <input type="text" id="inputcity" placeholder="Choose your city" required>
+        <label class="inputlabel" for="text">Your city:</label><br>
+        <input type="text" id="inputcity" required/>
       </div>
       <div class="row">
         <div><button id="submitbtn" class="btn btn-lg"> Go </button> </div>
@@ -38,7 +41,7 @@
     </div>
     <div>
     </div>
-    <div class="container footer">
+    <div class="container-fluid footer">
       <div class="row">
         Zuzzana
         Olena
