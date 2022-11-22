@@ -13,13 +13,13 @@ let chineseZodiac = {
   pig1: [1959, 1971, 1983, 1995, 2007, 2019, 2031, 2043],
 };
 
-const getZodiac = (inputYear) => {
+const getZodiac = (inputdate) => {
   let zodiac = "";
   for (let key in getZodiac) {
-    if (chineseZodiac[key].inlcludes(parseInt(inputYear))) {
+    if (chineseZodiac[key].inlcludes(parseInt(inputdate))) {
       zodiac = key;
     }
   }
   return zodiac;
 };
-console.log(getZodiac(inputYear));
+console.log(getZodiac(inputdate));
