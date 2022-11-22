@@ -1,6 +1,5 @@
-let mySession = JSON.parse(sessionStorage.getItem("dataObject"));
-
-let inputdate = mySession.inputdate;
+let currentSession = JSON.parse(sessionStorage.getItem("dataObject"));
+let inputdate = currentSession.inputdate;
 console.log(inputdate);
 
 let chineseZodiac = {
@@ -58,7 +57,7 @@ let chineseZodiac = {
   rooster1: {
     years: [1957, 1969, 1981, 1993, 2005, 2017, 2029, 2041],
     quote:
-      "Rooster's auspicious gifts are forward thinking and solid self-confidence",
+      "Rooster's auspicious gifts are forward thinking and solid self-confidence.",
   },
   dog1: {
     years: [1958, 1970, 1982, 1994, 2006, 2018, 2030, 2042],
@@ -77,8 +76,8 @@ let chineseZodiac = {
 const getZodiac = (inputdate) => {
   let zodiac = "";
   for (let key in chineseZodiac) {
-    if (chineseZodiac[key].includes(parseInt(inputdate))) {
-      zodiac = chinese.Zodiac[key];
+    if (chineseZodiac[key].years.includes(parseInt(inputdate))) {
+      zodiac = chineseZodiac[key];
     }
   }
   return zodiac;
