@@ -1,5 +1,5 @@
 // fetch van jsonplaceholder API;
-
+// Update
 let mySession = JSON.parse(sessionStorage.getItem("dataObject"));
 console.log(mySession);
 
