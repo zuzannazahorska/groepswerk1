@@ -77,36 +77,25 @@ body {
 
 /* result.html */
 .weather-container {
-  padding: 100px;
+  padding: 50px;
 }
-.weather {
-  margin-left: 150px;
-}
-.hr {
-  margin-top: 50px;
-}
+
 .again {
-  margin-top: 400px;
+  margin-top: 80px;
   background-color: #aa251c;
   padding: 15px 100px;
   border-radius: 20px;
   color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 20px;
-  font-size: 18px;
+  right: 30px;
 }
 
 #myImg {
   border-radius: 70px;
-  position: absolute;
-  top: 30px;
-  right: 16px;
-  font-size: 18px;
 }
+
 .welcome {
-  margin-top: -50px;
   text-align: center;
+  padding: 40px;
   font-size: 50px;
   font-weight: 700;
 }
@@ -121,8 +110,4 @@ body {
 h4 {
   color: #aa251c;
   font-weight: 900;
-}
-
-#quotes {
-  padding-top: 100px;
 }
