@@ -1,6 +1,6 @@
-body{
-  font-family: 'ZCOOL XiaoWei', sans-serif;
-  background-color: #D0AEA2
+body {
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  background-color: #d0aea2;
 }
 .header {
   background-image: url(Images/logo2.jpg);
@@ -8,9 +8,9 @@ body{
   height: 25rem;
 }
 .name {
-  font-family: 'Ma Shan Zheng', cursive;
+  font-family: "Ma Shan Zheng", cursive;
   text-align: center;
-  color: #D0AEA2;
+  color: #d0aea2;
   font-size: 7rem;
   letter-spacing: 2px;
   position: relative;
@@ -30,73 +30,81 @@ body{
 .footer {
   margin-top: 100px;
   margin-bottom: 0;
-  padding: 50px;;
-  background-color: #AA251C;
+  padding: 50px;
+  background-color: #aa251c;
   color: white;
-  
 }
 
-.inputlabel{
+.inputlabel {
   font-size: 2.5rem;
   padding: 10px;
-  color: #AA251C;
+  color: #aa251c;
 }
 
-#submitbtn{
+#submitbtn {
   margin-top: 80px;
   /* background-color: #7F0000; */
-  background-color: #AA251C;;
+  background-color: #aa251c;
   padding: 15px 100px;
   border-radius: 20px;
   border: none;
 }
 
-#submitbtn:hover{
+#submitbtn:hover {
   background-color: #891d16;
 }
 
-.again:hover{
-  background-color:#891d16 ;
+.again:hover {
+  background-color: #891d16;
   color: white;
 }
-.contact{
+.contact {
   display: flex;
- 
 }
-.icon{
+.icon {
   font-size: 30px;
   margin-right: 20px;
   margin-top: 20px;
 }
-#inputdate, #inputname, #inputcity{
+#inputdate,
+#inputname,
+#inputcity {
   padding: 10px;
   text-align: center;
   border-radius: 20px;
   border: none;
-  
 }
-
 
 /* result.html */
-.weather-container{
+.weather-container {
   padding: 50px;
 }
-.again{
+.again {
   margin-top: 80px;
-  background-color: #AA251C;
+  background-color: #aa251c;
   padding: 15px 100px;
   border-radius: 20px;
   color: white;
-  position: center;
-  right: 30px;
 }
 
-#myImg{
+#myImg {
   border-radius: 70px;
 }
-.welcome{
+.welcome {
   text-align: center;
   padding: 40px;
   font-size: 50px;
-font-weight: 700;
+  font-weight: 700;
+}
+.pred {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+.sign {
+  margin-top: -20px;
+}
+h4 {
+  color: #aa251c;
+  font-weight: 900;
 }

@@ -17,14 +17,14 @@ fetch(url)
       document.getElementById("myImg").src = "Images/overcast.gif";
     } else if (data.currentConditions.conditions == "Partially cloudy") {
       document.getElementById("myImg").src = "Images/overcast.gif";
-    } else if (data.currentConditions.conditions == "Rain") {
+    } else if ((data.currentConditions.conditions == "Rain", "Overcast")) {
       document.getElementById("myImg").src = "Images/rain.gif";
     } else if (data.currentConditions.conditions == "Clear") {
       document.getElementById("myImg").src = "Images/4lQ5.gif";
     }
     weather.innerHTML = `
   <p>Location: ${data.resolvedAddress}</p>
-  <p>Temperature: ${data.currentConditions.temp}°C</p>
+  <h4>Temperature: ${data.currentConditions.temp}°C</h4>
   <p>Current conditions: ${data.currentConditions.conditions}</p>`;
   })
   .catch((err) => {
