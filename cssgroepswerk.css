@@ -77,32 +77,22 @@ body {
 
 /* result.html */
 .weather-container {
-  padding: 100px;
+  padding: 50px;
 }
-.weather {
-  margin-left: 150px;
-}
-.hr {
-  margin-top: 50px;
-}
+
 .again {
-  margin-top: 400px;
+  margin-top: 80px;
   background-color: #aa251c;
   padding: 15px 100px;
   border-radius: 20px;
   color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 20px;
+  position: center;
+  right: 30px;
   font-size: 18px;
 }
 
 #myImg {
   border-radius: 70px;
-  position: absolute;
-  top: 30px;
-  right: 16px;
-  font-size: 18px;
 }
 .welcome {
   text-align: center;
