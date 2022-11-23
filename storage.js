@@ -32,3 +32,5 @@ submitbtn.addEventListener("click", function () {
     window.location.href = "result.html";
   }
 });
+
+

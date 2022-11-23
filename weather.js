@@ -7,7 +7,7 @@ let weather = document.getElementById("weather");
 let url =
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
   mySession.inputcity +
-  "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+  "?unitGroup=metric&include=current&key=JN5WK3U2N95ZKUL2QSK3D8R2P&contentType=json";
 
 fetch(url)
   .then((response) => response.json())
