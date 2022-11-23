@@ -105,8 +105,8 @@ body {
   font-size: 18px;
 }
 .welcome {
+  margin-top: -50px;
   text-align: center;
-  padding: 20px;
   font-size: 50px;
   font-weight: 700;
 }
@@ -121,4 +121,8 @@ body {
 h4 {
   color: #aa251c;
   font-weight: 900;
+}
+
+#quotes {
+  padding-top: 100px;
 }
