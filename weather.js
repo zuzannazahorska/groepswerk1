@@ -19,6 +19,8 @@ fetch(url)
       document.getElementById("myImg").src = "Images/overcast.gif";
     } else if (data.currentConditions.conditions == "Rain") {
       document.getElementById("myImg").src = "Images/rain.gif";
+    } else if (data.currentConditions.conditions == "Clear") {
+      document.getElementById("myImg").src = "Images/4lQ5.gif";
     }
     weather.innerHTML = `
   <p>Location: ${data.resolvedAddress}</p>
